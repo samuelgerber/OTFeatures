@@ -18,7 +18,7 @@ devtools::install_github("samuelgerber/OTFeatures")
 ## Example
 
 ```R
-librayr(OTFeatures)
+library(OTFeatures)
 data(brains)
 otf = extract.otf.image.3d(brain1, brain2)
 par(mfrow=c(2,2))
