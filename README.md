@@ -18,11 +18,18 @@ devtools::install_github("samuelgerber/OTFeatures")
 ## Example
 
 ```R
-library(OTFeatures)
-from = array(runif(1000), dim=rep(10, 3))
-to = array(runif(1000), dim=rep(10, 3))
-otf = extract.otf.image.3d(from, to)
-image(otf$difference.from[,,5])
+librayr(OTFeatures)
+data(brains)
+otf = extract.otf.image.3d(brain1, brain2)
+par(mfrow=c(2,2))
+image(brain1[,,2])
+title("From")
+image(brain2[,,2])
+title("To")
+image(brain1[,,2] - brain2[,,2])
+title("Difference Per Voxel")
+image(otf$difference.from[,,2])
+title("Mass Allocation in From")
 ```
 
 ## References 
