@@ -15,6 +15,16 @@ Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = "true")
 devtools::install_github("samuelgerber/OTFeatures")
 ```
 
+## Example
+
+```R
+library(OTFeatures)
+from = array(runif(1000), dim=rep(10, 3))
+to = array(runif(1000), dim=rep(10, 3))
+otf = extract.otf.image.3d(from, to)
+image(otf$difference.from[,,5])
+```
+
 ## References 
 The optimal transport based morphometry approach was first described in:
 > Gerber S, Niethammer M, Styner M, Aylward S. 
