@@ -1,9 +1,9 @@
 # OTFeatures - Optimal Transport Features  
 
-This is a repository for computing optimal transport features for [brain
+This is a repository for an R package to compute optimal transport features for [brain
 morphometry](https://en.wikipedia.org/wiki/Brain_morphometry).
 
-This package contains only the optimal transport feature extraction step and
+The package contains only the optimal transport feature extraction step and
 can be used to integrate optimal transport features with existing morphometry
 approaches.
 
